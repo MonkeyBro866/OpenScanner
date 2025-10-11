@@ -10,6 +10,7 @@ import CoreSpotlight
 
 @main
 struct scannerApp: App {
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
 	@Environment(\.scenePhase) var scenePhase
 	let persistenceController = PersistenceController.shared
 	

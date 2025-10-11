@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		45DCBB5B0B9D67F5262BD838 /* libPods-scanner.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F4081E1B081FAB64FDD9B295 /* libPods-scanner.a */; };
+		809625472E9A074900394BF0 /* UMCommonSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809625462E9A074900394BF0 /* UMCommonSwift.swift */; };
+		809625492E9A086500394BF0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809625482E9A086500394BF0 /* AppDelegate.swift */; };
 		A30439A128A317B0002DE651 /* PageScanSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30439A028A317B0002DE651 /* PageScanSummary.swift */; };
 		A30A91D1288A3AB800D8228B /* DataScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30A91D0288A3AB800D8228B /* DataScannerViewController.swift */; };
 		A30A91D5288DB6CA00D8228B /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30A91D4288DB6CA00D8228B /* AppState.swift */; };
@@ -96,6 +99,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3A29507259975BBD0F724403 /* Pods-scanner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-scanner.debug.xcconfig"; path = "Target Support Files/Pods-scanner/Pods-scanner.debug.xcconfig"; sourceTree = "<group>"; };
+		809625452E9A063300394BF0 /* Scanner-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Scanner-Bridging-Header.h"; sourceTree = "<group>"; };
+		809625462E9A074900394BF0 /* UMCommonSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UMCommonSwift.swift; sourceTree = "<group>"; };
+		809625482E9A086500394BF0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A30439A028A317B0002DE651 /* PageScanSummary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageScanSummary.swift; sourceTree = "<group>"; };
 		A30A91D0288A3AB800D8228B /* DataScannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataScannerViewController.swift; sourceTree = "<group>"; };
 		A30A91D4288DB6CA00D8228B /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
@@ -143,6 +150,8 @@
 		A3B9F73128AF021000EEDDFF /* NavigationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationManager.swift; sourceTree = "<group>"; };
 		A3DE6DD8289C303D00A7E740 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		A3DE6DDA289C365400A7E740 /* ScanStartPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanStartPicker.swift; sourceTree = "<group>"; };
+		B9523FBBF14ED181A3962AD5 /* Pods-scanner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-scanner.release.xcconfig"; path = "Target Support Files/Pods-scanner/Pods-scanner.release.xcconfig"; sourceTree = "<group>"; };
+		F4081E1B081FAB64FDD9B295 /* libPods-scanner.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-scanner.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +159,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45DCBB5B0B9D67F5262BD838 /* libPods-scanner.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -179,6 +189,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		13AD77C4DA44FF51AB2E9A82 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3A29507259975BBD0F724403 /* Pods-scanner.debug.xcconfig */,
+				B9523FBBF14ED181A3962AD5 /* Pods-scanner.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		A30E5C81288A2FF40099985F = {
 			isa = PBXGroup;
 			children = (
@@ -188,6 +207,7 @@
 				A3233D3428BC49B60088268F /* ScannerWidget */,
 				A30E5C8B288A2FF40099985F /* Products */,
 				A3DE6DEF289C7E6300A7E740 /* Frameworks */,
+				13AD77C4DA44FF51AB2E9A82 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -205,6 +225,8 @@
 		A30E5C8C288A2FF40099985F /* scanner */ = {
 			isa = PBXGroup;
 			children = (
+				809625482E9A086500394BF0 /* AppDelegate.swift */,
+				809625462E9A074900394BF0 /* UMCommonSwift.swift */,
 				A30E5C8D288A2FF40099985F /* scannerApp.swift */,
 				A30E5C94288A2FF40099985F /* ContentView.swift */,
 				A3B9F72F28AF007300EEDDFF /* AppIntents.swift */,
@@ -219,6 +241,7 @@
 				A3B56FDA2C99F2F600EF29FE /* Extensions */,
 				A30FC7382891ACA800C75CFB /* UIKit */,
 				A30E5C99288A2FF50099985F /* Preview Content */,
+				809625452E9A063300394BF0 /* Scanner-Bridging-Header.h */,
 			);
 			path = scanner;
 			sourceTree = "<group>";
@@ -324,6 +347,7 @@
 			children = (
 				A3233D3028BC49B60088268F /* WidgetKit.framework */,
 				A3233D3228BC49B60088268F /* SwiftUI.framework */,
+				F4081E1B081FAB64FDD9B295 /* libPods-scanner.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -335,6 +359,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A30E5CB4288A2FF50099985F /* Build configuration list for PBXNativeTarget "scanner" */;
 			buildPhases = (
+				2E08C522410D6EDDB8D4826C /* [CP] Check Pods Manifest.lock */,
 				A30E5C86288A2FF40099985F /* Sources */,
 				A30E5C87288A2FF40099985F /* Frameworks */,
 				A30E5C88288A2FF40099985F /* Resources */,
@@ -346,8 +371,6 @@
 				A3233D3E28BC49B70088268F /* PBXTargetDependency */,
 			);
 			name = scanner;
-			packageProductDependencies = (
-			);
 			productName = scanner;
 			productReference = A30E5C8A288A2FF40099985F /* scanner.app */;
 			productType = "com.apple.product-type.application";
@@ -433,15 +456,14 @@
 			};
 			buildConfigurationList = A30E5C85288A2FF40099985F /* Build configuration list for PBXProject "openscanner" */;
 			compatibilityVersion = "Xcode 14.0";
-			developmentRegion = en;
+			developmentRegion = "zh-Hans";
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = A30E5C81288A2FF40099985F;
-			packageReferences = (
-			);
 			productRefGroup = A30E5C8B288A2FF40099985F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -489,6 +511,31 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2E08C522410D6EDDB8D4826C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-scanner-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A30E5C86288A2FF40099985F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -512,6 +559,7 @@
 				A3233D3C28BC49B70088268F /* ScannerWidget.intentdefinition in Sources */,
 				A325C2C9288B8E9600E83CF6 /* OpenScannerButton.swift in Sources */,
 				A3A4F88C289DE36300986816 /* SmallGlyphButton.swift in Sources */,
+				809625492E9A086500394BF0 /* AppDelegate.swift in Sources */,
 				A30FC7412893496400C75CFB /* DocumentCameraWrapper.swift in Sources */,
 				A30E5C93288A2FF40099985F /* scanner.xcdatamodeld in Sources */,
 				A30E5C95288A2FF40099985F /* ContentView.swift in Sources */,
@@ -519,6 +567,7 @@
 				A30FC74E2894F6D500C75CFB /* ZoomableScrollView.swift in Sources */,
 				A30FC73D2892200900C75CFB /* DataExtensions.swift in Sources */,
 				A30FC74A289495A500C75CFB /* InfoButton.swift in Sources */,
+				809625472E9A074900394BF0 /* UMCommonSwift.swift in Sources */,
 				A325C2D2288F75C800E83CF6 /* ViewExtensions.swift in Sources */,
 				A30E5C90288A2FF40099985F /* Persistence.swift in Sources */,
 				A325C2D0288F0F0200E83CF6 /* PageScan.swift in Sources */,
@@ -692,6 +741,7 @@
 		};
 		A30E5CB5288A2FF50099985F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A29507259975BBD0F724403 /* Pods-scanner.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -700,7 +750,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"scanner/Preview Content\"";
-				DEVELOPMENT_TEAM = 74TAWHT4L6;
+				DEVELOPMENT_TEAM = 7FX3RGRSBW;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -717,13 +767,14 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 12.3;
 				MARKETING_VERSION = 1.0.2;
-				PRODUCT_BUNDLE_IDENTIFIER = camp.user.openscanner;
+				PRODUCT_BUNDLE_IDENTIFIER = cn.chaboshi.enterpriseTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator xros xrsimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/scanner/Scanner-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,7";
 			};
@@ -731,6 +782,7 @@
 		};
 		A30E5CB6288A2FF50099985F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B9523FBBF14ED181A3962AD5 /* Pods-scanner.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -739,7 +791,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"scanner/Preview Content\"";
-				DEVELOPMENT_TEAM = 74TAWHT4L6;
+				DEVELOPMENT_TEAM = 7FX3RGRSBW;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -756,13 +808,14 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 12.3;
 				MARKETING_VERSION = 1.0.2;
-				PRODUCT_BUNDLE_IDENTIFIER = camp.user.openscanner;
+				PRODUCT_BUNDLE_IDENTIFIER = cn.chaboshi.enterpriseTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator xros xrsimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/scanner/Scanner-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,7";
 			};
@@ -775,12 +828,12 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 74TAWHT4L6;
+				DEVELOPMENT_TEAM = 7FX3RGRSBW;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MACOSX_DEPLOYMENT_TARGET = 12.4;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = camp.user.scannerTests;
+				PRODUCT_BUNDLE_IDENTIFIER = cn.chaboshi.enterpriseTestTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
@@ -820,12 +873,12 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 74TAWHT4L6;
+				DEVELOPMENT_TEAM = 7FX3RGRSBW;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MACOSX_DEPLOYMENT_TARGET = 12.4;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = camp.user.scannerUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = cn.chaboshi.enterpriseTestUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
@@ -866,7 +919,7 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 74TAWHT4L6;
+				DEVELOPMENT_TEAM = 7FX3RGRSBW;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ScannerWidget/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = ScannerWidget;
@@ -878,7 +931,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = camp.user.openscanner.ScannerWidget;
+				PRODUCT_BUNDLE_IDENTIFIER = cn.chaboshi.enterpriseTest.ScannerWidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;

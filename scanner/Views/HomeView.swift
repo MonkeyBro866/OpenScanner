@@ -126,14 +126,14 @@ struct HomeView: View {
 				.listRowBackground(Color.clear)
 				.listRowSeparator(.hidden)
 			
-			if searchText == "" {
-				AboutView()
-					.listRowBackground(Color.clear)
-					.listRowSeparator(.hidden)
-					.padding(.top, 40)
-					.padding(.bottom, 100)
-					.buttonStyle(.borderless)
-			}
+//			if searchText == "" {
+//				AboutView()
+//					.listRowBackground(Color.clear)
+//					.listRowSeparator(.hidden)
+//					.padding(.top, 40)
+//					.padding(.bottom, 100)
+//					.buttonStyle(.borderless)
+//			}
 			
 		}
 		.listStyle(.plain)
