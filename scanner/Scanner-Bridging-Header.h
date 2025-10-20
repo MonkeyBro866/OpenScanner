@@ -10,5 +10,6 @@
 
 //导入UMCommon的OC的头文件
 #import <UMCommon/UMCommon.h>
+#import <UMUnionSDK/UMUnionSDK.h>
 
 #endif /* Scanner_Bridging_Header_h */

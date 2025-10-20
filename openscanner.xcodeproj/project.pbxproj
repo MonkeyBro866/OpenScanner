@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		45DCBB5B0B9D67F5262BD838 /* libPods-scanner.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F4081E1B081FAB64FDD9B295 /* libPods-scanner.a */; };
+		807278462EA36DE900832FB6 /* AdUnionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807278452EA36DE900832FB6 /* AdUnionManager.swift */; };
 		809625472E9A074900394BF0 /* UMCommonSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809625462E9A074900394BF0 /* UMCommonSwift.swift */; };
 		809625492E9A086500394BF0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809625482E9A086500394BF0 /* AppDelegate.swift */; };
 		A30439A128A317B0002DE651 /* PageScanSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30439A028A317B0002DE651 /* PageScanSummary.swift */; };
@@ -100,6 +101,7 @@
 
 /* Begin PBXFileReference section */
 		3A29507259975BBD0F724403 /* Pods-scanner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-scanner.debug.xcconfig"; path = "Target Support Files/Pods-scanner/Pods-scanner.debug.xcconfig"; sourceTree = "<group>"; };
+		807278452EA36DE900832FB6 /* AdUnionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdUnionManager.swift; sourceTree = "<group>"; };
 		809625452E9A063300394BF0 /* Scanner-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Scanner-Bridging-Header.h"; sourceTree = "<group>"; };
 		809625462E9A074900394BF0 /* UMCommonSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UMCommonSwift.swift; sourceTree = "<group>"; };
 		809625482E9A086500394BF0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -227,6 +229,7 @@
 			children = (
 				809625482E9A086500394BF0 /* AppDelegate.swift */,
 				809625462E9A074900394BF0 /* UMCommonSwift.swift */,
+				807278452EA36DE900832FB6 /* AdUnionManager.swift */,
 				A30E5C8D288A2FF40099985F /* scannerApp.swift */,
 				A30E5C94288A2FF40099985F /* ContentView.swift */,
 				A3B9F72F28AF007300EEDDFF /* AppIntents.swift */,
@@ -364,6 +367,7 @@
 				A30E5C87288A2FF40099985F /* Frameworks */,
 				A30E5C88288A2FF40099985F /* Resources */,
 				A3233D4028BC49B70088268F /* Embed Foundation Extensions */,
+				D556E7EB0D7B3BA1931BC756 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -534,6 +538,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		D556E7EB0D7B3BA1931BC756 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-scanner/Pods-scanner-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-scanner/Pods-scanner-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-scanner/Pods-scanner-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -564,6 +585,7 @@
 				A30E5C93288A2FF40099985F /* scanner.xcdatamodeld in Sources */,
 				A30E5C95288A2FF40099985F /* ContentView.swift in Sources */,
 				A3B9F72E28A6F97C00EEDDFF /* StringMetrics.swift in Sources */,
+				807278462EA36DE900832FB6 /* AdUnionManager.swift in Sources */,
 				A30FC74E2894F6D500C75CFB /* ZoomableScrollView.swift in Sources */,
 				A30FC73D2892200900C75CFB /* DataExtensions.swift in Sources */,
 				A30FC74A289495A500C75CFB /* InfoButton.swift in Sources */,

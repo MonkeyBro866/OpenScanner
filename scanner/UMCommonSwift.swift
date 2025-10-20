@@ -42,4 +42,12 @@ class UMCommonSwift: NSObject {
     static func deviceIDForIntegration() -> String{
         return UMConfigure.deviceIDForIntegration();
     }
+    
+    /**
+     启动广告SDK
+     */
+    static func start() {
+        UMUnionAdSdk.start();
+    }
+    
 }

@@ -8,6 +8,7 @@ target 'scanner' do
 
   # Pods for scanner
   pod 'UMCommon'
+  pod 'UMUnionSDK'
 
 end
 
